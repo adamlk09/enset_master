@@ -1,0 +1,16 @@
+.app-container {
+  height: 100vh;
+}
+
+.sidenav {
+  width: 240px;
+  border-right: 1px solid rgba(0,0,0,0.12);
+}
+
+.main-content {
+  background-color: var(--main-bg-color, #fafafa);
+}
+
+.router-outlet-container {
+  padding: 16px;
+}

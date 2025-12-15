@@ -1,0 +1,17 @@
+.title {
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #284ea1;
+}
+
+.button {
+    -fx-background-color: #5827b3;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.text-field, .date-picker {
+    -fx-background-color: #aa8de0;
+    -fx-prompt-text-fill: white;
+    -fx-text-fill: black;
+}

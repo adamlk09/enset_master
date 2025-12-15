@@ -1,0 +1,15 @@
+<mat-toolbar color="primary" class="navbar">
+  <button mat-icon-button (click)="toggleSidebar.emit()">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <span class="navbar-title">Digital Banking</span>
+  <span class="spacer"></span>
+  <!-- Thème Switcher - Bonus créatif ! -->
+  <button mat-icon-button (click)="toggleTheme()" matTooltip="Toggle Dark Mode">
+    <mat-icon>{{ isDarkMode ? 'light_mode' : 'dark_mode' }}</mat-icon>
+  </button>
+  <button mat-button routerLink="/profile">
+    <mat-icon>account_circle</mat-icon>
+    Admin User
+  </button>
+</mat-toolbar>

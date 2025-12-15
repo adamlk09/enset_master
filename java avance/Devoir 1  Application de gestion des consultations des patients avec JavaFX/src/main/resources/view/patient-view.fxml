@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="controller.PatientController"
+      spacing="10" alignment="TOP_CENTER" stylesheets="@../style/style.css">
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+
+    <Label text="Gestion des Consultations" styleClass="title"/>
+
+    <HBox spacing="10">
+        <TextField fx:id="nameField" promptText="Nom du patient"/>
+        <TextField fx:id="ageField" promptText="Âge"/>
+        <DatePicker fx:id="datePicker"/>
+        <Button text="Ajouter" onAction="#handleAddPatient"/>
+    </HBox>
+
+    <ListView fx:id="patientListView" prefHeight="300"/>
+</VBox>

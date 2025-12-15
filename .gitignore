@@ -1,0 +1,8 @@
+# Keep all binary assets
+!*.png
+!*.jpg
+!*.jpeg
+!*.gif
+!*.zip
+!*.rar
+!*.pdf

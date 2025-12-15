@@ -1,0 +1,3 @@
+com.vogdo.dao.DaoImpl
+com.vogdo.metier.MetierImpl
+com.vogdo.ext.DaoImplV2

@@ -1,0 +1,41 @@
+name: getready
+description: "A new Flutter project."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.8.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Utility Packages
+  http: ^1.2.1
+  intl: ^0.19.0
+
+  # UI & UX
+  cupertino_icons: ^1.0.8
+
+  # Device & Hardware
+  image_picker: ^1.0.7
+  image_cropper:
+  barcode_scan2:
+
+  # Google ML Kit (replaces firebase_ml_vision)
+  google_mlkit_text_recognition: ^0.11.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/profile.jpg
+    - assets/images/clear.png
+    - assets/images/clouds.png
+    - assets/images/rain.png
+    - assets/images/snow.png

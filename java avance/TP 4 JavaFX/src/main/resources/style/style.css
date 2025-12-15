@@ -1,0 +1,17 @@
+.title {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #000000;
+}
+
+.text-field {
+    -fx-background-color: #FAAAAF;
+    -fx-prompt-text-fill: white;
+    -fx-text-fill: black;
+}
+
+.button {
+    -fx-background-color: #F56;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}

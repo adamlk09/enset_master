@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "147951197408",
+    "project_id": "getready-9faae",
+    "storage_bucket": "getready-9faae.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:147951197408:android:fb27bc3654d2bbc6188485",
+        "android_client_info": {
+          "package_name": "com.programstructure.getready"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBAml9XHgVxVCkfPcVXijn2SqyynrChUaw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
