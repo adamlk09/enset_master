@@ -1,0 +1,48 @@
+<!-- Products DataTable -->
+<div class="container mt-5">
+  <div class="row justify-content-center">
+    <div class="col-md-10">
+      <div class="card shadow">
+        <div class="card-body">
+          <h2 class="card-title mb-4 text-primary">Products List</h2>
+          <table class="table table-bordered table-hover">
+            <thead class="table-dark">
+              <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                <th>Selected</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              @for (product of products; track product) {
+                <tr >
+                  <td>{{ product.id }}</td>
+                  <td>{{ product.name }}</td>
+                  <td>{{ product.quantity }}</td>
+                  <td>{{ product.price | currency  }}</td>
+                  <td> <i class="bi" [ngClass]="product.selected ? 'bi-check-circle-fill text-success' : 'bi-circle'"></i>
+
+                  </td>
+                  <td>
+                    <button class="btn btn-danger btn-sm" (click)="deleteProduct(product.id)">
+                      <i class="bi bi-trash"></i>
+                    </button>
+                  </td>
+                </tr>
+              }
+              @if(!products || products.length === 0) {
+              <tr>
+                <td colspan="5" class="text-center">No products found.</td>
+              </tr>
+              }
+
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,14 @@
+.product-item {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+}
+button {
+  background: #ffd400;
+  color: #0e0e0e;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
