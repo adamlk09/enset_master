@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3"
+      layout:decorate="~{layout1}"
+>
+<head>
+    <meta charset="UTF-8">
+    <title>Products</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/webjars/bootstrap/5.3.5/css/bootstrap.min.css}">
+</head>
+<body>
+<div class="p-3" layout:fragment="content1">
+    <div class="p-3" sec:authorize="hasAnyRole('ADMIN')">
+        <a class="btn btn-primary" th:href="@{/admin/add}">Add Product</a>
+    </div>
+    <table class="table table-striped">
+        <thead class="table-dark">
+        <th>ID</th><th>Name</th><th>Price</th><th>Quantity</th>
+        </thead>
+        <tbody>
+        <tr th:each="p:${productList}">
+            <td th:text="${p.id}"></td>
+            <td th:text="${p.name}"></td>
+            <td th:text="${p.price}"></td>
+            <td th:text="${p.quantity}"></td>
+            <td sec:authorize="hasAnyRole('ADMIN')">
+                <form method="delete" th:action="@{/admin/delete(id=${p.id})}">
+                    <button type="submit" class="btn btn-danger">
+                        Delete
+                    </button>
+                </form>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>
